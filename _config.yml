@@ -1,0 +1,16 @@
+# Setup
+title:            Humans Forward
+url:              http://humansforward.com
+
+# Serving
+host:             127.0.0.1
+port:             9001
+
+# Permalinks
+permalink:        pretty
+
+# Custom vars
+bootstrap_version:  4.0.0-alpha.2
+
+cdn:
+  jquery:         https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
