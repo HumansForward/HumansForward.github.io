@@ -114,7 +114,7 @@ h1.hf-heading {
   line-height: 1.5;
 }
 .row.hf-ethos {
-  color: #bcbcbc;
+  color: #ddd;
 }
 
 @keyframes aethosword {
@@ -141,9 +141,9 @@ h1.hf-heading {
 }
 
 @keyframes aethostext {
-    0%   {color: #bcbcbc;}
+    0%   {color: #ddd;}
     20%  {color: #ff9900;}
-    30%  {color: #bcbcbc;}
+    30%  {color: #ddd;}
 }
 .hf-animate-impact-text {
   animation-name: aethostext;
