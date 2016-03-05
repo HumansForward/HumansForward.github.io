@@ -15,12 +15,19 @@ body {
 .hf-heading {
   margin-bottom: 2rem;
 }
-h1.hf-heading {
+
+h1.hf-heading,
+.hf-tagline {
+  letter-spacing: 0.1rem;
   text-transform: lowercase;
 }
 
+.hf-logotype {
+  letter-spacing: -0.2rem;
+}
+
 .hf-section {
-  padding: 6rem 3rem;
+  padding: 4rem 3rem;
 }
 .hf-section .hf-section {
   padding: 3rem 0;
@@ -31,19 +38,24 @@ h1.hf-heading {
   align-items: center;
 }
 
-
 /*
  * Navagation
  */
 
 #homeNavbar.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: 1.25rem;
-  text-transform: lowercase;
 }
-#homeNavbar .navbar-nav .nav-link + .nav-link {
-  margin-left: 2rem;
+
+#homeNavbar.navbar {
+  background-color: none;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  text-transform: lowercase;
+  transition: all 0.4s ease;
+}
+#homeNavbar.navbar.hf-scrolled {
+  background-color: rgba(66, 66, 66, 0.9);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
 }
 
 
@@ -52,12 +64,11 @@ h1.hf-heading {
  */
 
 #homeCover.jumbotron {
-  background-color: #424242;
+  background-color: black;
   color: white;
   margin-bottom: 0;
-  padding-top: 8rem;
-  padding-left: 6rem;
-  min-height: 20rem;
+  padding: 8rem 3rem;
+  min-height: 640px;
   height: 100vh;
 }
 
@@ -68,6 +79,8 @@ h1.hf-heading {
 
 #introSection {
   background-color: #ff9900;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 #introSection .lead {
   font-size: 1.5rem;
@@ -89,6 +102,7 @@ h1.hf-heading {
 
 #labSection {
   background-color: #3299bb;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 #labSection .hf-heading {
@@ -113,7 +127,7 @@ h1.hf-heading {
 .hf-mission {
   line-height: 1.5;
 }
-.row.hf-ethos {
+.hf-mission-quote {
   color: #ddd;
 }
 
