@@ -1,0 +1,26 @@
+{
+  "name": "HumansForward.github.io",
+  "homepage": "https://github.com/HumansForward/HumansForward.github.io",
+  "authors": [
+    "J. Scott Smith <scott@newleafsolutionsinc.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "animate-css#^3.5.1",
+    "jquery": "^2.2.1",
+    "holderjs": "^2.9.3",
+    "wow": "wowjs#^1.1.2",
+    "jquery.scrollTo": "^2.1.2"
+  }
+}

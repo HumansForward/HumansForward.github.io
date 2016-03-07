@@ -1,0 +1,27 @@
+{
+  "name": "humansforward.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "_site/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HumansForward/HumansForward.github.io.git"
+  },
+  "author": "J. Scott Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HumansForward/HumansForward.github.io/issues"
+  },
+  "homepage": "https://github.com/HumansForward/HumansForward.github.io#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-connect": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-exec": "^0.4.6"
+  }
+}
