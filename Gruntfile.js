@@ -18,6 +18,16 @@ module.exports = function(grunt) {
           }
         ]
       },
+      d3: {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/d3/",
+            src: "d3.min.js",
+            dest: "vendor/js/"
+          }
+        ]
+      },
       jquery: {
         files: [
           {
@@ -28,12 +38,12 @@ module.exports = function(grunt) {
           }
         ]
       },
-      jqueryscrollTo: {
+      velocity: {
         files: [
           {
             expand: true,
-            cwd: "bower_components/jquery.scrollTo/",
-            src: "jquery.scrollTo.min.js",
+            cwd: "bower_components/velocity/",
+            src: "velocity.min.js",
             dest: "vendor/js/"
           }
         ]

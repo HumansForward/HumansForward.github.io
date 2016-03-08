@@ -13,10 +13,10 @@ $(function() {
   $(navbar + ' a').click(function(e) {
     e.preventDefault();
 
-    $(window).stop(true).scrollTo(this.hash, {
+    $(this.hash).velocity("scroll", {
       duration: 500,
-      interrupt: true,
-      offset: {top: -50}
+      easing: "swing",
+      offset: -50
     });
   });
 
