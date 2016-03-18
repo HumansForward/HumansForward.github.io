@@ -9,14 +9,12 @@ define(["jquery", "lodash", "visualizers/arcs/main", "velocity", "wow", "bootstr
   $(function() {
     new WOW().init();
 
-    var navbar = "#homeNavbar";
-
     // Update navbar links, animate scrolling
     $("body").scrollspy({
-      target: navbar,
+      target: "#homeNavbar",
       offset: 90
     });
-    $(navbar + ' a').click(function(e) {
+    $("a.hf-scroll-link").click(function(e) {
       e.preventDefault();
 
       $(this.hash).velocity("scroll", {
@@ -29,14 +27,16 @@ define(["jquery", "lodash", "visualizers/arcs/main", "velocity", "wow", "bootstr
     // Adjust nav size and opacity on scroll
     $(window).scroll(function() {
       if ($(document).scrollTop() > 100) {
-        $(navbar).addClass('hf-scrolled');
+        $("#homeNavbar").addClass("hf-scrolled");
+        $(".hf-cover-link").addClass("hf-scrolled");
       } else {
-        $(navbar).removeClass('hf-scrolled');
+        $("#homeNavbar").removeClass("hf-scrolled");
+        $(".hf-cover-link").removeClass("hf-scrolled");
       }
     });
 
     // Email link, resist bots
-    $('a.hf-email').click(function(e) {
+    $("a.hf-email").click(function(e) {
       e.preventDefault();
 
       window.location.href = "mailto:hel" + "lo@humansf" + "orward.com" + "?subject=Hello";
