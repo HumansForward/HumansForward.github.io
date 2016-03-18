@@ -21,6 +21,9 @@ h1.hf-heading,
   letter-spacing: 0.1rem;
   text-transform: lowercase;
 }
+.hf-tagline {
+  margin-left: 0.5rem;
+}
 
 .hf-logotype {
   letter-spacing: -0.2rem;

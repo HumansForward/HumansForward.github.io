@@ -1,3 +1,7 @@
+/**
+ * Grunt task configuration
+ */
+
 "use strict";
 
 module.exports = function(grunt) {
@@ -14,7 +18,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "bower_components/animate.css/",
             src: "animate.min.css",
-            dest: "vendor/css/"
+            dest: "assets/vendor/css/"
           }
         ]
       },
@@ -24,7 +28,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "bower_components/d3/",
             src: "d3.min.js",
-            dest: "vendor/js/"
+            dest: "assets/vendor/js/"
           }
         ]
       },
@@ -34,7 +38,37 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "bower_components/jquery/dist/",
             src: "jquery.min.js",
-            dest: "vendor/js/"
+            dest: "assets/vendor/js/"
+          }
+        ]
+      },
+      lodash: {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/lodash/dist/",
+            src: "lodash.min.js",
+            dest: "assets/vendor/js/"
+          }
+        ]
+      },
+      pouchdb: {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/pouchdb/dist",
+            src: "pouchdb.min.js",
+            dest: "assets/vendor/js/"
+          }
+        ]
+      },
+      requirejs: {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/requirejs/",
+            src: "require.js",
+            dest: "assets/"
           }
         ]
       },
@@ -44,7 +78,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "bower_components/velocity/",
             src: "velocity.min.js",
-            dest: "vendor/js/"
+            dest: "assets/vendor/js/"
           }
         ]
       },
@@ -54,7 +88,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "bower_components/wow/dist/",
             src: "wow.min.js",
-            dest: "vendor/js/"
+            dest: "assets/vendor/js/"
           }
         ]
       }
@@ -69,7 +103,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       source: {
-        files: ["_data/**/*", "_drafts/**/*", "_includes/**/*", "_layouts/**/*", "_posts/**/*", "assets/**/*", "_config.yml", "*.html", "*.md"],
+        files: ["_data/**/*", "_drafts/**/*", "_includes/**/*", "_layouts/**/*", "_posts/**/*", "assets/site/**/*", "examples/*", "_config.yml", "*.html", "*.md"],
         tasks: ["exec:jekyll"]
       }
     },

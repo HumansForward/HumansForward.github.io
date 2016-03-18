@@ -2,38 +2,19 @@
   <div class="container text-xs-center p-a-1"><i class="fa fa-smile-o" style="margin-right: 1rem;"></i>Copyright © Humans Forward</div>
 </footer>
 
-<script src="{{ site.cdn.jquery }}"></script>
-<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/vendor/js/jquery.min.js"><\/script>')</script>
-
-{% if site.github %}
-  <script src="{{ site.baseurl }}/dist/js/hf-bootstrap.min.js"></script>
-{% else %}
-  <script src="{{ site.baseurl }}/dist/js/hf-bootstrap.js"></script>
-{% endif %}
-
-<script src="{{ site.baseurl }}/vendor/js/velocity.min.js"></script>
-<script src="{{ site.baseurl }}/vendor/js/wow.min.js"></script>
-<script src="{{ site.baseurl }}/vendor/js/d3.min.js"></script>
+<!-- Each layout has its own app script loaded by RequireJS  -->
+<script src="{{ site.baseurl }}/assets/require_config.js"></script>
+<script src="{{ site.baseurl }}/assets/require.js" data-main="site/{{ page.layout }}"></script>
 
 <!-- Just to make our placeholder images work. Don't actually use this! -->
-<!-- <script src="{{ site.baseurl }}/assets/js/vendor/holder.min.js"></script> -->
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
-
+<!-- 
+<script src="{{ site.baseurl }}/assets/js/vendor/holder.min.js"></script>
 <script>
-new WOW().init();
+Holder.addTheme('gray', {
+  background: '#777',
+  foreground: 'rgba(255,255,255,.75)',
+  font: 'Helvetica',
+  fontweight: 'normal'
+})
 </script>
-
-{% if page.layout == "home" %}
-<script src="{{ site.baseurl }}/assets/js/home.js"></script>
-{% endif %}
-
-<script>
-// Holder.addTheme('gray', {
-//   background: '#777',
-//   foreground: 'rgba(255,255,255,.75)',
-//   font: 'Helvetica',
-//   fontweight: 'normal'
-// })
-</script>
+ -->

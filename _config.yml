@@ -1,7 +1,12 @@
-# Handling Reading
+#
+# Jekyll configuration
+#
+
+# Handling reading
 exclude:
   - "bower_components"
   - "bower.json"
+  - "examples"
   - "node_modules"
   - "package.json"
   - "Gruntfile.js"
@@ -14,7 +19,4 @@ port:             9001
 permalink:        pretty
 
 # Custom vars
-bootstrap_version:  4.0.0-alpha.2
-
-cdn:
-  jquery:         https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
+# TBD

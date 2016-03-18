@@ -1,16 +1,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
-<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
-<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="description" content="Humans Forward makes connected tech products that work beautifully for people, now and into the future.">
+<meta name="keywords" content="hardware, software, IoT, connected, full stack, sensors, actuators, electronics, fog, cloud, algorithms">
+<meta name="author" content="J. Scott Smith and Paul Weber">
 
 <title>
-  {% if page.layout == "home" %}
-    {{ page.title }}
-  {% else %}
-    {{ page.title }} &middot; Bootstrap
-  {% endif %}
+  {{ page.title }}
 </title>
 
 <!-- Fonts -->
@@ -19,26 +15,19 @@
 
 <!-- Bootstrap core CSS -->
 {% if site.github %}
-  <link href="{{ site.baseurl }}/dist/css/hf-bootstrap.min.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/bootstrap/dist/css/hf-bootstrap.min.css" rel="stylesheet">
 {% else %}
-  <link href="{{ site.baseurl }}/dist/css/hf-bootstrap.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/bootstrap/dist/css/hf-bootstrap.css" rel="stylesheet">
 {% endif %}
 
 <!-- Animate.css -->
-<link href="{{ site.baseurl }}/vendor/css/animate.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/vendor/css/animate.min.css" rel="stylesheet">
 
 <!-- Extras and overrides -->
-<link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/site/css/style.css" rel="stylesheet">
 
 <!-- Favicons -->
-<!-- <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+<!-- 
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
  -->
-<script>
-  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  // ga('create', 'UA-146052-10', 'getbootstrap.com');
-  // ga('send', 'pageview');
-</script>

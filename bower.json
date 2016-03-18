@@ -22,6 +22,9 @@
     "holderjs": "^2.9.3",
     "wow": "wowjs#^1.1.2",
     "d3": "^3.5.16",
-    "velocity": "^1.2.3"
+    "velocity": "^1.2.3",
+    "lodash": "^4.6.1",
+    "requirejs": "^2.1.22",
+    "pouchdb": "^5.3.0"
   }
 }
