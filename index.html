@@ -3,15 +3,14 @@ layout: home
 title: Humans Forward
 ---
 
-<!-- TODO: Work on content, better photos, projects -->
 <!-- TODO: Replace icon images under Product Development -->
+<!-- TODO: Work on content, better photos, projects -->
 <!-- TODO: Add interactive word cloud -->
 <!-- TODO: Finish up page animations -->
 <!-- TODO: Add favicon -->
 <!-- TODO: Add robots.txt -->
 <!-- TODO: Setup email accounts -->
 <!-- TODO: Add Woopra tracking -->
-
 <!-- TODO: Break-out content to smaller files -->
 <!-- TODO: Refactor CSS for color theming -->
 <!-- TODO: Incorporate whatever changes into Bootstrap fork -->
@@ -19,11 +18,14 @@ title: Humans Forward
 
 <section class="jumbotron jumbotron-fluid" id="homeCover">
   <div class="container-fluid">
-    <div id="mainVisual" style="position: absolute; top: 0; left: 0; z-index: 0; opacity: 0.2;"></div>
+    <div id="mainVisual" style="position: absolute; top: 0; left: 0; z-index: 0; opacity: 0.4;"></div>
     <div style="position: absolute; z-index: 999; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);">
       <h1 class="display-2 hidden-xs-down hf-logotype">Humans Forward</h1>
       <h1 class="display-4 hidden-sm-up hf-logotype">Humans Forward</h1>
       <h2 class="hf-tagline">Evolving Technology</h2>
+    </div>
+    <div style="position: absolute; top: 50vh; left: 0; width: 100%; text-align: center;">
+      <i class="fa fa-3x fa-circle-o-notch fa-spin hf-cover-spin"></i>
     </div>
     <div style="position: absolute; top: 90vh; left: 0; width: 100%; text-align: center;">
       <a class="hf-cover-link hf-scroll-link" href="#intro"><i class="fa fa-3x fa-angle-double-down"></i></a>
@@ -59,19 +61,19 @@ title: Humans Forward
             <p class="lead text-muted">Focused on expanding and optimizing your strategic opportunities, we work with you to explore and bridge the gap between your product vision and shipped products.</p>
           </div>
           <div class="col-xs-12 col-md-2 p-a-1">
-            <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/site/img/icons/wooden-sign.png" />
+            <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/site/img/icons/skate-park.png" />
           </div>
         </div>
 
         <div class="row vertical-align wow fadeIn hf-product-dev-about">
           <div class="col-xs-12 col-md-2 col-md-offset-5 hidden-sm-down p-a-1">
-            <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/site/img/icons/light-bulb.png" />
+            <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/site/img/icons/lightbulb.png" />
           </div>
           <div class="col-xs-12 col-md-5 text-xs-center text-md-left">
             <p class="lead text-muted">Through iterative design and creative thinking, we help you realize your product concepts, definitions, roadmaps, prototypes, and MVPs - advancing us to products that delight.</p>
           </div>
           <div class="col-xs-12 col-md-2 hidden-md-up p-a-1">
-            <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/site/img/icons/light-bulb.png" />
+            <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/site/img/icons/lightbulb.png" />
           </div>
         </div>
 
@@ -80,7 +82,7 @@ title: Humans Forward
             <p class="lead text-muted">Excited by using connected devices, we employ edge sensors and actuators, energy-smart electronics, fog processing, the cloud, learning algorithms, and friendly and informative services to improve our lives.</p>
           </div>
           <div class="col-xs-12 col-md-2 p-a-1">
-            <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/site/img/icons/circle-shape.png" />
+            <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/site/img/icons/wifi-signal.png" />
           </div>
         </div>
       </div>
@@ -145,50 +147,42 @@ title: Humans Forward
           <!-- <div class="card-deck-wrapper"> -->
             <div class="card-deck">
               <div class="card hf-lab-project">
-                <img class="card-img-top img-fluid" src="{{ site.baseurl }}/assets/site/img/lab/placeholder1.jpeg" alt="Lab project" />
+                <!-- <img class="card-img-top img-fluid" src="{{ site.baseurl }}/assets/site/img/lab/placeholder1.jpeg" alt="Lab project" /> -->
                 <div class="card-block">
-                  <h4 class="card-title">Project 1</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
-                  <a href="#" class="card-link">View on GitHub</a>
+                  <h4 class="card-title">Health Sense (part 1)</h4>
+                  <h5 class="card-title">Environmental Multisensor</h5>
+                  <p class="card-text">Our health and well-being is affected by a variety of environmental stressors. To understand this further, we’re prototyping a BLE device using the <a href="https://punchthrough.com/bean" target="_blank">LightBlue Bean</a> that continuously measures ambient light, temperature, sound, and low-frequency vibrations from various geo-locations. </p>
+                  <p><span class="label label-info">coming soon!</span></p>
+                  <!-- <a href="#" class="card-link">View on GitHub</a> -->
                 </div>
               </div>
 
               <div class="card hf-lab-project">
-                <img class="card-img-top img-fluid" src="{{ site.baseurl }}/assets/site/img/lab/placeholder2.jpeg" alt="Lab project" />
+                <!-- <img class="card-img-top img-fluid" src="{{ site.baseurl }}/assets/site/img/lab/placeholder2.jpeg" alt="Lab project" /> -->
                 <div class="card-block">
-                  <h4 class="card-title">Project 2</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
-                  <a href="#" class="card-link">View on GitHub</a>
+                  <h4 class="card-title">Health Sense (part 2)</h4>
+                  <h5 class="card-title">Multipeer Data Store</h4>
+                  <p class="card-text">To gather user feedback along with readings from a network of environmental multisensors, we’re building a P2P data service that can store and relay event data - like dweet.io and PouchDB combined. Written using Node.js, the service can be deployed to a fleet of Raspberry Pis and cloud servers.</p>
+                  <p><span class="label label-info">coming soon!</span></p>
                 </div>
               </div>
 
               <div class="card hf-lab-project">
-                <img class="card-img-top img-fluid" src="{{ site.baseurl }}/assets/site/img/lab/placeholder3.jpeg" alt="Lab project" />
+                <!-- <img class="card-img-top img-fluid" src="{{ site.baseurl }}/assets/site/img/lab/placeholder3.jpeg" alt="Lab project" /> -->
                 <div class="card-block">
-                  <h4 class="card-title">Project 3</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
-                  <a href="#" class="card-link">View on GitHub</a>
+                  <h4 class="card-title">Health Sense (part 3)</h4>
+                  <h5 class="card-title">Learning Platform Integration</h4>
+                  <p class="card-text">Seeing the patterns that cause stress can reveal side effects and lead to preventitive action. Could that 3 AM street noise every weeknight have a cumulative adverse effect on your immune system? By integrating our Multipeer Data Store with a machine learning platform, we can begin to uncover these mysteries.</p>
+                  <p><span class="label label-info">coming soon!</span></p>
                 </div>
               </div>
 
               <div class="card hf-lab-project">
-                <img class="card-img-top img-fluid" src="{{ site.baseurl }}/assets/site/img/lab/placeholder4.jpeg" alt="Lab project" />
+                <!-- <img class="card-img-top img-fluid" src="{{ site.baseurl }}/assets/site/img/lab/placeholder4.jpeg" alt="Lab project" /> -->
                 <div class="card-block">
-                  <h4 class="card-title">Project 4</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
-                  <a href="#" class="card-link">View on GitHub</a>
+                  <h4 class="card-title">Bluetooth Dev Kit Roundup</h4>
+                  <p class="card-text">We recently purchased a few popular BLE development kits for future product development. Check back later as we’ll be comparing system features, architecture, dev environments, interoperability and associated productization, certification, qualification and deployment costs.</p>
+                  <p><span class="label label-info">coming soon!</span></p>
                 </div>
               </div>
             </div>
@@ -196,11 +190,14 @@ title: Humans Forward
           </div>
         </div>
 
+<!-- NOTE: For future use -->
+<!-- 
         <div class="row">
           <div class="col-xs-12 text-xs-center p-a-1">
             <a class="btn btn-secondary-outline" href="#" role="button">All Projects</a>
           </div>
         </div>
+ -->
       </div>
     </section>
 
@@ -261,7 +258,7 @@ title: Humans Forward
           <div class="col-xs-12 col-md-5 col-md-offset-1">
             <img class="hf-img-team-member" src="{{ site.baseurl }}/assets/site/img/team/scott.png" />
             <h3>J. Scott Smith</h3>
-            <p>Scott has a diverse background in "full stack" software architecture, coding and enterprise solutions. He puts tremendous emphasis on planning and organizing his software projects to produce elegant and efficient solutions with the most appropriate technologies and components. His experience ranges from the enterprise to mobile devices, and he's also proficient in IoT hardware and firmware design. His passions include practicing and teaching martial arts, and has spent many years racing bicycles.</p>
+            <p>Scott has a diverse background in "full stack" software architecture, coding and enterprise solutions. He puts tremendous emphasis on planning and organizing his software projects to produce elegant and efficient solutions with the most appropriate technologies and components. His experience ranges from the enterprise to mobile devices, and he’s also proficient in IoT hardware and firmware design. His passions include practicing and teaching martial arts, and has spent many years racing bicycles.</p>
           </div>
         </div>
       </div>

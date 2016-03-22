@@ -47,5 +47,7 @@ define(["jquery", "lodash", "visualizers/arcs/main", "velocity", "wow", "bootstr
     vis.start();
     $(window).on("resize", _.debounce(vis.resize.bind(vis), 500));
 
+    // Hide spinner
+    $(".hf-cover-spin").velocity("fadeOut", {duration: 1000});
   });
 });
