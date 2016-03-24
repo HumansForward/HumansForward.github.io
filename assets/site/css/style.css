@@ -80,7 +80,19 @@ h1.hf-heading,
  */
 
 #homeCover.jumbotron {
-  background-color: black;
+  background-color: #020506;
+  background-image: url(/assets/site/img/patterns/txture.png);
+
+  // JSS: Other colors to try
+  // background-color: #07151a;
+
+  // JSS: Other patterns to try, download the pattern and re-host for production
+  // background-image: url(http://www.transparenttextures.com/patterns/45-degree-fabric-dark.png);
+  // background-image: url(http://www.transparenttextures.com/patterns/black-orchid.png);
+  // background-image: url(http://www.transparenttextures.com/patterns/dark-tire.png);
+  // background-image: url(http://www.transparenttextures.com/patterns/darth-stripe.png);
+  // background-image: url(http://www.transparenttextures.com/patterns/diagonales-decalees.png);
+
   color: white;
   margin-bottom: 0;
   padding: 8rem 3rem;
@@ -112,6 +124,15 @@ h1.hf-heading,
   background-color: #eee;
 }
 
+.hf-img-product-icon {
+  opacity: 0.8;
+}
+
+.hf-img-product-logo {
+  background-color: #ddd;
+  width: 10rem;
+  padding: 1rem;
+}
 
 /*
  * Lab section
