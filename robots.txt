@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /assets/
+Allow: /
+
+User-agent: Googlebot-Image
+Disallow: /

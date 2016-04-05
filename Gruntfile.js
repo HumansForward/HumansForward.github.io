@@ -103,7 +103,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       source: {
-        files: ["_data/**/*", "_drafts/**/*", "_includes/**/*", "_layouts/**/*", "_posts/**/*", "assets/site/**/*", "examples/*", "_config.yml", "*.html", "*.md"],
+        files: ["_data/**/*", "_drafts/**/*", "_includes/**/*", "_layouts/**/*", "_posts/**/*", "assets/site/**/*", "examples/*", "_config.yml", "*.html", "*.md", "robots.txt"],
         tasks: ["exec:jekyll"]
       }
     },
