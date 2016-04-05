@@ -39,7 +39,7 @@ define(["jquery", "lodash", "visualizers/arcs/main", "velocity", "wow", "bootstr
     $("a.hf-email").click(function(e) {
       e.preventDefault();
 
-      window.location.href = "mailto:hel" + "lo@humansf" + "orward.com" + "?subject=Hello";
+      window.location.href = "mailto:inf" + "o@humansfo" + "rward.com" + "?subject=Hello";
     });
 
     // Cover visualizer
