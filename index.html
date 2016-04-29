@@ -5,7 +5,6 @@ title: Humans Forward
 
 <!-- TODO: Add interactive word cloud -->
 <!-- TODO: Finish up page animations, fadeIn, etc. -->
-<!-- TODO: Add favicon -->
 <!-- TODO: Setup email accounts -->
 <!-- TODO: Add Woopra tracking -->
 <!-- TODO: Break-out content to smaller files -->
@@ -16,11 +15,14 @@ title: Humans Forward
 <section class="jumbotron jumbotron-fluid" id="homeCover">
   <div class="container-fluid">
     <div id="mainVisual" style="position: absolute; top: 0; left: 0; z-index: 0; opacity: 0.8;"></div>
+<!-- NOTE: Deprecated -->
+<!-- 
     <div style="position: absolute; z-index: 999; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);">
-      <h1 class="display-2 hidden-xs-down hf-logotype">Humans Forward</h1>
-      <h1 class="display-4 hidden-sm-up hf-logotype">Humans Forward</h1>
+      <h1 class="display-3 hidden-xs-down hf-logotype">Humans Forward</h1>
+      <h1 class="display-5 hidden-sm-up hf-logotype">Humans Forward</h1>
       <h2 class="hf-tagline">Evolving Technology</h2>
     </div>
+ -->
     <div style="position: absolute; top: 50vh; left: 0; width: 100%; text-align: center;">
       <i class="fa fa-3x fa-circle-o-notch fa-spin hf-cover-spin"></i>
     </div>
@@ -260,8 +262,18 @@ title: Humans Forward
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-md-5">
-          <h3>Humans Forward</h3>
-          <h5>San Francisco, California</h5>
+          <ul class="media-list">
+            <li class="media">
+              <div class="media-left">
+                <img class="hf-img-footer-logo" src="{{ site.baseurl }}/assets/site/img/brand/hf-footer-logo.png">
+              </div>
+              <div class="media-body hf-footer-text">
+                <h2>Humans Forward</h2>
+                <h5>San Francisco, California</h5>
+              </div>
+            </li>
+          </ul>
+
           <p class="hf-social-links">
             <a href="#" class="btn btn-lg btn-primary-outline hf-social-link hf-email"><i class="fa fa-envelope fa-lg"></i> Email</a>
             <a href="https://github.com/HumansForward" target="_blank" class="btn btn-lg btn-primary-outline hf-social-link"><i class="fa fa-github fa-lg"></i> GitHub</a>
@@ -271,7 +283,7 @@ title: Humans Forward
         </div>
 
         <div class="col-xs-12 col-md-6 col-md-offset-1">
-          <h3>Latest musings</h3>
+          <h2>Latest musings</h2>
           <a class="twitter-timeline" href="https://twitter.com/HumansForward" data-widget-id="705638570703237121" data-chrome="noheader nofooter noborders noscrollbar transparent" data-tweet-limit="1">Tweets by @HumansForward</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>

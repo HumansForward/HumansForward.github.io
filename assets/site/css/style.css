@@ -16,18 +16,19 @@ body {
   margin-bottom: 2rem;
 }
 
-h1.hf-heading,
-.hf-tagline {
-  letter-spacing: 0.1rem;
-  text-transform: lowercase;
-}
-.hf-tagline {
-  margin-left: 0.5rem;
-}
+// NOTE: Deprecated
+// h1.hf-heading,
+// .hf-tagline {
+//   letter-spacing: 0.1rem;
+//   text-transform: lowercase;
+// }
+// .hf-tagline {
+//   margin-left: 0.5rem;
+// }
 
-.hf-logotype {
-  letter-spacing: -0.2rem;
-}
+// .hf-logotype {
+//   letter-spacing: -0.2rem;
+// }
 
 .hf-section {
   padding: 4rem 3rem;
@@ -45,17 +46,45 @@ h1.hf-heading,
  * Navagation
  */
 
+.navbar-nav.navbar-nav-center {
+  width: 100%;
+  text-align: center;
+}
+.navbar-nav.navbar-nav-center .nav-item {
+  float: none;
+  display: inline-block;
+}
+
 #homeNavbar.navbar {
   background-color: none;
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
   text-transform: lowercase;
   transition: all 0.4s ease;
+  padding: 1rem;
 }
 #homeNavbar.navbar.hf-scrolled {
   background-color: rgba(66, 66, 66, 0.9);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.hf-img-nav-logo {
+  width: 82px;
+  transition: all 0.4s ease;
+}
+.hf-img-nav-logotype {
+  width: 500px;
+  transition: all 0.4s ease;
+}
+.hf-img-nav-logotype-sm {
+  width: 250px;
+  transition: all 0.4s ease;
+}
+#homeNavbar.hf-scrolled .hf-img-nav-logotype,
+#homeNavbar.hf-scrolled .hf-img-nav-logotype-sm {
+  width: 250px;
 }
 
 .hf-cover-link:focus,
@@ -234,6 +263,15 @@ h1.hf-heading,
 /*
  * Social section and footer
  */
+
+.hf-img-footer-logo {
+  width: 100px;
+  margin-top: -1.7rem;
+}
+
+.hf-footer-text {
+  color: white;
+}
 
 #social,
 footer {
